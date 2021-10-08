@@ -30,7 +30,7 @@
 ✔️ Twitter Timeline\
 ✔️ Github Profile
 
-To view a live example, **[click here](/)**.
+To view a live example, **[click here](https://mayank-khanna.netlify.app)**.
 
 
 ## Getting Started
