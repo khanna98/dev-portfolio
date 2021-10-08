@@ -14,7 +14,7 @@ const greeting = {
   username: "Mayank Khanna",
   title: "Hi all, I'm Mayank",
   subTitle: emoji(
-    "A passionate software developer, problem solver, and technology enthusiast who loves learning new things. A quick learner with zeal and motivation to succeed, I have experience working as a Full Stack Developer, Voice App Developer, and DevOps Engineer (SRE). I look forward to opportunities that will help me grow and where I can contribute to the growth of the organization with my technical and management skills.",
+    "A passionate software developer, problem solver, and technology enthusiast who loves learning new things. A quick learner with zeal and motivation to succeed, I have experience working as a Full Stack Developer, Voice App Developer, and DevOps Engineer (SRE). I look forward to opportunities that will help me grow and where I can contribute to the growth of the organization with my technical and management skills."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1sgyqxvshItb2u87qsDx2a3h85xzJlwUF/view?usp=sharing", // Set to empty to hide the button
@@ -41,18 +41,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "I build Cloud Infrastructure and Softwares that makes your life easy and work enjoyable.",
+  subTitle:
+    "I build Cloud Infrastructure and Softwares that makes your life easy and work enjoyable.",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
     emoji("⚡ Setup Cloud Infrastructure on AWS, GCP or any cloud provider."),
-    emoji(
-      "⚡ Manage Cloud Infrastructure using Terraform (IAC)."
-    ),
-    emoji(
-      "⚡ Automate your deployments using CI/CD, Jenkins etc."
-    )
+    emoji("⚡ Manage Cloud Infrastructure using Terraform (IAC)."),
+    emoji("⚡ Automate your deployments using CI/CD, Jenkins etc.")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -126,7 +123,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Linux",
       fontAwesomeClassname: "fab fa-linux"
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -212,7 +209,7 @@ const workExperiences = {
         "Helped in solving a critical production issue that saved UPLIGHT $200K per month cost increase",
         "I wrote a script to add tags to all the instances be it EC2, S3, Lambda, or DynamoDB, which helped us monitor costs better and eventually helped save around $10k per year.",
         "I also made various monitoring dashboards in Looker and Cloudwatch."
-      ],
+      ]
     },
     {
       role: "Software Engineer Intern",
@@ -231,7 +228,7 @@ const workExperiences = {
         "Designed new software applications by using object‐oriented languages like JavaScript.",
         "Altered, updated, and enhanced existing systems and applications after performing troubleshooting measures to determine the issue."
       ]
-    },
+    }
   ]
 };
 
@@ -263,25 +260,35 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Spark Award - UST BlueConch Technologies",
-      subtitle: "Got appreciation for being the spark in the team and motivating them to do better and efficient work.",
+      subtitle:
+        "Got appreciation for being the spark in the team and motivating them to do better and efficient work.",
       image: require("./assets/images/14595-thumbs-up.gif"),
       footerLink: [
         {name: "Spark Award"},
         {name: "#Leadership"},
         {name: "#Appreciation"},
-        {name: "Certificate", url: "https://drive.google.com/file/d/13Efi2NP1QH-PB-tqhV0u-cMc0wQnz1MP/view?usp=sharing"}
+        {
+          name: "Certificate",
+          url: "https://drive.google.com/file/d/13Efi2NP1QH-PB-tqhV0u-cMc0wQnz1MP/view?usp=sharing"
+        }
       ]
     },
     {
       title: "Pat on Back - Uplight",
-      subtitle: "Got appreciation for the work I did as a Associate Software Enginner.",
+      subtitle:
+        "Got appreciation for the work I did as a Associate Software Enginner.",
       image: require("./assets/images/61147-excellent.gif"),
       footerLink: [
         {name: "Pat On the Back"},
         {name: "#Appreciation"},
-        {name: "Certificate 2021", url: "https://drive.google.com/file/d/13Efi2NP1QH-PB-tqhV0u-cMc0wQnz1MP/view?usp=sharing"},
-        {name: "Certificate 2020", url: "https://drive.google.com/file/d/1mConZpXwpeo0j8wZ-X1jtR2SD3aPRo5o/view?usp=sharing"}
-
+        {
+          name: "Certificate 2021",
+          url: "https://drive.google.com/file/d/13Efi2NP1QH-PB-tqhV0u-cMc0wQnz1MP/view?usp=sharing"
+        },
+        {
+          name: "Certificate 2020",
+          url: "https://drive.google.com/file/d/1mConZpXwpeo0j8wZ-X1jtR2SD3aPRo5o/view?usp=sharing"
+        }
       ]
     },
     {
@@ -291,7 +298,10 @@ const achievementSection = {
       footerLink: [
         {name: "Jul 2020 - No Expiration"},
         {name: "Udemy", url: "https://www.udemy.com"},
-        {name: "Certification Credntials", url: "https://www.udemy.com/certificate/UC-9a058d13-f3a1-4455-aa9c-dd0255ad527c/"}
+        {
+          name: "Certification Credntials",
+          url: "https://www.udemy.com/certificate/UC-9a058d13-f3a1-4455-aa9c-dd0255ad527c/"
+        }
       ]
     },
     {
@@ -301,7 +311,10 @@ const achievementSection = {
       footerLink: [
         {name: "Jun 2020 - No Expiration"},
         {name: "Udemy", url: "https://www.udemy.com"},
-        {name: "Certification Credntials", url: "https://www.udemy.com/certificate/UC-ec858918-b82d-432f-962c-b7476d87244f/"}
+        {
+          name: "Certification Credntials",
+          url: "https://www.udemy.com/certificate/UC-ec858918-b82d-432f-962c-b7476d87244f/"
+        }
       ]
     },
     {
@@ -311,7 +324,10 @@ const achievementSection = {
       footerLink: [
         {name: "May 2020 - No Expiration"},
         {name: "Udemy", url: "https://www.udemy.com"},
-        {name: "Certification Credntials", url: "https://www.udemy.com/certificate/UC-add3b90c-f4da-416c-9b92-35c5f14aad66/"}
+        {
+          name: "Certification Credntials",
+          url: "https://www.udemy.com/certificate/UC-add3b90c-f4da-416c-9b92-35c5f14aad66/"
+        }
       ]
     },
     {
@@ -321,7 +337,10 @@ const achievementSection = {
       footerLink: [
         {name: "Apr 2020 - No Expiration"},
         {name: "Udemy", url: "https://www.udemy.com"},
-        {name: "Certification Credntials", url: "https://www.udemy.com/certificate/UC-f17f0ea5-dcfe-4dfe-8b69-89a30a3d6f93/"}
+        {
+          name: "Certification Credntials",
+          url: "https://www.udemy.com/certificate/UC-f17f0ea5-dcfe-4dfe-8b69-89a30a3d6f93/"
+        }
       ]
     },
     {
@@ -331,7 +350,10 @@ const achievementSection = {
       footerLink: [
         {name: "Jun 2019 - No Expiration"},
         {name: "Coding Ninjas", url: "https://www.codingninjas.in"},
-        {name: "Certification Credntials", url: "https://www.codingninjas.in/verify/c1e90177b1930cf6"}
+        {
+          name: "Certification Credntials",
+          url: "https://www.codingninjas.in/verify/c1e90177b1930cf6"
+        }
       ]
     },
     {
@@ -341,21 +363,34 @@ const achievementSection = {
       footerLink: [
         {name: "Mar 2018 - No Expiration"},
         {name: "Udacity", url: "https://www.udacity.com"},
-        {name: "Certification Credntials I", url: "https://drive.google.com/file/d/1S7NrzYGwVdzE09T9gkIxfOBJOMWBCdBe/view?usp=sharing"},
-        {name: "Certification Credntials II", url: "https://drive.google.com/file/d/1bX-pPJv2xKblK9tSgbkqKI_lH1qwukLK/view?usp=sharing"}
+        {
+          name: "Certification Credntials I",
+          url: "https://drive.google.com/file/d/1S7NrzYGwVdzE09T9gkIxfOBJOMWBCdBe/view?usp=sharing"
+        },
+        {
+          name: "Certification Credntials II",
+          url: "https://drive.google.com/file/d/1bX-pPJv2xKblK9tSgbkqKI_lH1qwukLK/view?usp=sharing"
+        }
       ]
     },
     {
       title: "Acadview: Core JAVA Development",
-      subtitle: "Completed training from Acadview (Now upGrad) for basics of JAVA ",
+      subtitle:
+        "Completed training from Acadview (Now upGrad) for basics of JAVA ",
       image: require("./assets/images/upgrad-logo.png"),
       footerLink: [
         {name: "Jun 2019 - No Expiration"},
         {name: "upGrad", url: "https://www.upgrad.com"},
-        {name: "Certificate Credentials", url: "https://drive.google.com/file/d/1_EfucnNr6j1JUnEQp5Y7ZyEzqgfavIAv/view?usp=sharing"},
-        {name: "Letter of Recommendation", url: "https://drive.google.com/file/d/1PsysrFHeQvoNk_LgJFuuXJUcPlg2ZD1m/view?usp=sharing"}
+        {
+          name: "Certificate Credentials",
+          url: "https://drive.google.com/file/d/1_EfucnNr6j1JUnEQp5Y7ZyEzqgfavIAv/view?usp=sharing"
+        },
+        {
+          name: "Letter of Recommendation",
+          url: "https://drive.google.com/file/d/1PsysrFHeQvoNk_LgJFuuXJUcPlg2ZD1m/view?usp=sharing"
+        }
       ]
-    },
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -419,7 +454,7 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Discuss a project or just want to say hi? My Inbox is open for all."
 };
 
 // Twitter Section
