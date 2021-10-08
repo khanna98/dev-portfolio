@@ -1,6 +1,6 @@
 {
-  "homepage": "https://developerfolio.js.org/",
-  "name": "developerfolio",
+  "homepage": "",
+  "name": "dev-portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
