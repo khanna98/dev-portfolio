@@ -35,10 +35,10 @@ const Main = () => {
         <Skills />
         <StackProgress />
         <Education />
+        <Achievement />
         <WorkExperience />
         <Projects />
         <StartupProject />
-        <Achievement />
         <Blogs />
         <Talks />
         <Twitter />
