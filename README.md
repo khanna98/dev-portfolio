@@ -58,7 +58,7 @@ From your command line, clone and run developerFolio:
 
 ```bash
 # Clone this repository
-git clone https://github.com/khanna98/mk-developer-portfolio.git dev-portfolio
+git clone https://github.com/khanna98/dev-portfolio
 
 # Go into the repository
 cd dev-portfolio
@@ -136,7 +136,7 @@ This section guides you to deploy your portfolio on Github pages.
 
 You could also host directly with Netlify by linking your own repository.
 
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/saadpasta/developerFolio)
+[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/khanna98/dev-portfolio)
 
 For more information, read [hosting on Netlify](https://create-react-app.dev/docs/deployment/#netlify).
 
