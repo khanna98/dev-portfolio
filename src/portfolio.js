@@ -203,7 +203,7 @@ const workExperiences = {
       company: "UST BlueConch Technologies Pvt. Ltd.",
       companylogo: require("./assets/images/bct.jpeg"),
       date: "August 2020 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "I am currently working as an SRE for Uplight, where I automate tasks, take care of the Cloud Infrastructure and make deployments smooth and easy.",
       descBullets: [
         "Working as the lead in the GCP Migration for Orchestrate Engineering product, where I see and manage the infrastructure that needs to be set up and how to migrate the data and products.",
         "Helped in solving a critical production issue that saved UPLIGHT $200K per month cost increase",
