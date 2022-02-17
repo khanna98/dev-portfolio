@@ -17,7 +17,7 @@ const greeting = {
     "A passionate software developer, problem solver, and technology enthusiast who loves learning new things. A quick learner with zeal and motivation to succeed, I have experience working as a Full Stack Developer, Voice App Developer, and DevOps Engineer (SRE). I look forward to opportunities that will help me grow and where I can contribute to the growth of the organization with my technical and management skills."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1juwW4sL4p4m2HXbv8aghCPW6B4G8xOz8/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1SY4jkAAlKny1kTRT-5BiH1sbFcoI36zO/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
