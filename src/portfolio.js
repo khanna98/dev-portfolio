@@ -29,7 +29,7 @@ const socialMediaLinks = {
   gmail: "mkhanna98.dev@gmail.com",
   gitlab: "https://gitlab.com/mayank.khanna.98",
   // facebook: "https://www.facebook.com/saad.pasta7",
-  // medium: "https://medium.com/@saadpasta",
+  medium: "https://medium.com/@iammayank",
   instagram: "https://instagram.com/_mayankkhanna",
   stackoverflow: "https://stackoverflow.com/users/10852834/mayank-khanna",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -47,9 +47,13 @@ const skillsSection = {
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
     ),
+    emoji("⚡ Build and Deploy a complete working production app from scratch."),
+    emoji("⚡ Help you save cost on cloud infrastructure."),
+    emoji("⚡ Develop good looking and informative dashboards for monitoring and logging."),
     emoji("⚡ Setup Cloud Infrastructure on AWS, GCP or any cloud provider."),
     emoji("⚡ Manage Cloud Infrastructure using Terraform (IAC)."),
-    emoji("⚡ Automate your deployments using CI/CD, Jenkins etc.")
+    emoji("⚡ Automate your deployments using CI/CD, Jenkins etc."),
+    emoji("⚡ Amaze you with my coding and devOps skills."),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -162,33 +166,25 @@ const techStack = {
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend (MongoDB)",
+      Stack: "Backend (MongoDB), MySQL",
       progressPercentage: "90%"
     },
     {
       Stack: "AWS/GCP/Cloud Computing",
-      progressPercentage: "75%"
-    },
-    {
-      Stack: "Python",
       progressPercentage: "85%"
     },
     {
-      Stack: "Jenkins/Ansible",
+      Stack: "Python, Programming",
       progressPercentage: "75%"
     },
     {
-      Stack: "Docker",
+      Stack: "Jenkins, Ansible, Terraform, Chef",
       progressPercentage: "80%"
     },
     {
-      Stack: "Terraform",
+      Stack: "Docker, Kubernetes",
       progressPercentage: "80%"
     },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -199,23 +195,33 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Associate Software Engineer",
+      role: "Associate SWE | SRE (DevOps and Infrastructure)",
       company: "UST BlueConch Technologies Pvt. Ltd.",
       companylogo: require("./assets/images/bct.jpeg"),
       date: "August 2020 – Present",
       desc: "I am currently working as an SRE for Uplight, where I automate tasks, take care of the Cloud Infrastructure and make deployments smooth and easy.",
       descBullets: [
         "Working as the lead in the GCP Migration for Orchestrate Engineering product, where I see and manage the infrastructure that needs to be set up and how to migrate the data and products.",
-        "Helped in solving a critical production issue that saved UPLIGHT $200K per month cost increase",
-        "I wrote a script to add tags to all the instances be it EC2, S3, Lambda, or DynamoDB, which helped us monitor costs better and eventually helped save around $10k per year.",
-        "I also made various monitoring dashboards in Looker and Cloudwatch."
+        "Implementing CI/CD for the tasks and deployments using CircleCI",
+        "Improving and maintaining legacy Jenkins Pipelines to be used for deployments and enabling logs etc.",
+        "Adding IAC features to make sure that all the infra related changes are made using terraform.",
+        "Creating new and robust dashboards for monitoring and logging in Splunk Observability Cloud.",
+        "Working as Incident Manager for On-Call rotation.",
+        "Adding new features for the new GCP Infrastructure being set up using IAC - Terraform.",
+        "Active member in the C&I Migration using AWS DMS.",
+        "Creating new tenants on the Production environment for the customers.",
+        "Giving regular demos of the new technologies being used and new work that is being done.",
+        "I worked on the AWS Infrastructure enhancement and monitoring cost for the resources.",
+        "Helped in solving a critical production issue that saved UPLIGHT $200K per month cost increase.",
+        "I wrote a script to add tags to all the instances be it EC2, S3, Lambda, or DynamoDB , which helped us monitor costs better and eventually helped save around $ 10k per year.",
+        "I also made various monitoring dashboards in Looker and CloudWatch.",
       ]
     },
     {
-      role: "Software Engineer Intern",
+      role: "SDE Intern | Full Stack Developer",
       company: "GoVocal.AI",
       companylogo: require("./assets/images/govocal.jpeg"),
-      date: "May 201p – June 2020",
+      date: "May 2019 – June 2020",
       desc: "I have been working as a Software Developer with in-demand skills and technologies. I have made many Voice Apps and also worked on Mobile Apps using React-Native.",
       descBullets: [
         "Developed software lifecycle products from vision through successful deployment.",
@@ -400,14 +406,14 @@ const achievementSection = {
 const blogSection = {
   title: "Blogs",
   subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
+    "With Love for Developing cool stuff, I love to write about coding, articles, and poetry.",
 
   blogs: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
+      url: "https://iammayank.medium.com/find-unique-characters-in-a-string-cc322a1f7ed8",
+      title: "Find unique characters in a given string",
       description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+        "A very common interview question that is a must for each and everyone preparing for interviews. This shows..."
     },
     {
       url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",

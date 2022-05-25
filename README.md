@@ -1,5 +1,7 @@
 # Mayank Khanna Developer Portfolio ⚡️
 
+![Website Pic](./src/assets/images/site-pic.png)
+
 ## Table of Contents
 - [Mayank Khanna Developer Portfolio ⚡️](#mayank-khanna-developer-portfolio-️)
   - [Table of Contents](#table-of-contents)
