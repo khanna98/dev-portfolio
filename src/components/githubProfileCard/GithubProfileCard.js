@@ -3,7 +3,7 @@ import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {contactInfo} from "../../portfolio";
 import emoji from "react-easy-emoji";
-import {Fade} from "react-reveal";
+import { motion } from "framer-motion"
 
 export default function GithubProfileCard({prof}) {
   if (prof.isHireable) {
@@ -12,8 +12,17 @@ export default function GithubProfileCard({prof}) {
     prof.hireable = "No";
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="contact">
+    <motion.div
+        className="main" id="contact"
+        // 2. Define the initial state (before animation)
+        initial={{ opacity: 0, y: 20 }}
+        // 3. Define the animation state (when in view)
+        whileInView={{ opacity: 1, y: 0 }}
+        // 4. Add a transition
+        transition={{ duration: 0.5 }}
+        // 5. Ensure it only runs once
+        viewport={{ once: true }}
+      >
         <h1 className="prof-title">Reach Out to me!</h1>
         <div className="row">
           <div className="main-content-profile">
@@ -56,7 +65,6 @@ export default function GithubProfileCard({prof}) {
             />
           </div>
         </div>
-      </div>
-    </Fade>
+      </motion.div>
   );
 }

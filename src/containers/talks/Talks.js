@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import "./Talks.scss";
 import TalkCard from "../../components/talkCard/TalkCard";
 import {talkSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { motion } from "framer-motion"
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Talks() {
@@ -11,8 +11,17 @@ export default function Talks() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="talks">
+    <motion.div
+      id="talks" className="main"
+      // 2. Define the initial state (before animation)
+      initial={{ opacity: 0, y: 20 }}
+      // 3. Define the animation state (when in view)
+      whileInView={{ opacity: 1, y: 0 }}
+      // 4. Add a transition
+      transition={{ duration: 0.5 }}
+      // 5. Ensure it only runs once
+      viewport={{ once: true }}
+    >
         <div className="talk-header">
           <h1 className="talk-header-title">{talkSection.title}</h1>
           <p
@@ -40,7 +49,6 @@ export default function Talks() {
             );
           })}
         </div>
-      </div>
-    </Fade>
+      </motion.div>
   );
 }

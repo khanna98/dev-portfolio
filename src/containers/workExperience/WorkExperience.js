@@ -2,15 +2,24 @@ import React, {useContext} from "react";
 import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import {workExperiences} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { motion } from "framer-motion"
 import StyleContext from "../../contexts/StyleContext";
 
 export default function WorkExperience() {
   const {isDark} = useContext(StyleContext);
   if (workExperiences.display) {
     return (
-      <div id="experience">
-        <Fade bottom duration={1000} distance="20px">
+      <motion.div
+        id="experience"
+        // 2. Define the initial state (before animation)
+        initial={{ opacity: 0, y: 20 }}
+        // 3. Define the animation state (when in view)
+        whileInView={{ opacity: 1, y: 0 }}
+        // 4. Add a transition
+        transition={{ duration: 0.5 }}
+        // 5. Ensure it only runs once
+        viewport={{ once: true }}
+      >
           <div className="experience-container" id="workExperience">
             <div>
               <h1 className="experience-heading">Experiences</h1>
@@ -34,8 +43,7 @@ export default function WorkExperience() {
               </div>
             </div>
           </div>
-        </Fade>
-      </div>
+      </motion.div>
     );
   }
   return null;

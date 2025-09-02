@@ -1,6 +1,6 @@
 import React from "react";
 import "./GithubRepoCard.scss";
-import {Fade} from "react-reveal";
+import { motion } from "framer-motion"
 
 export default function GithubRepoCard({repo, isDark}) {
   function openUrlInNewTab(url) {
@@ -12,8 +12,16 @@ export default function GithubRepoCard({repo, isDark}) {
   }
 
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div>
+      <motion.div
+        // 2. Define the initial state (before animation)
+        initial={{ opacity: 0, y: 20 }}
+        // 3. Define the animation state (when in view)
+        whileInView={{ opacity: 1, y: 0 }}
+        // 4. Add a transition
+        transition={{ duration: 0.5 }}
+        // 5. Ensure it only runs once
+        viewport={{ once: true }}
+      >
         <div
           className={isDark ? "dark-card-mode repo-card-div" : "repo-card-div"}
           key={repo.node.id}
@@ -87,7 +95,6 @@ export default function GithubRepoCard({repo, isDark}) {
             </div>
           </div>
         </div>
-      </div>
-    </Fade>
+      </motion.div>
   );
 }

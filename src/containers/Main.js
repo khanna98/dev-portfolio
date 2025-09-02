@@ -17,6 +17,7 @@ import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
+import { Container } from '@mui/system';
 import "./Main.scss";
 
 const Main = () => {
@@ -31,22 +32,24 @@ const Main = () => {
     <div className={isDark ? "dark-mode" : null}>
       <StyleProvider value={{isDark: isDark, changeTheme: changeTheme}}>
         <Header />
-        <Greeting />
-        <Skills />
-        <StackProgress />
-        <Education />
-        <WorkExperience />
-        <Projects />
-        <StartupProject />
-        <Achievement />
-        <Blogs />
-        <Talks />
-        <Twitter />
-        <Podcast />
-        <Profile />
+        <Container maxWidth="lg">
+          <Greeting />
+          <Skills />
+          <StackProgress />
+          <Education />
+          <WorkExperience />
+          <Projects />
+          <StartupProject />
+          <Achievement />
+          <Blogs />
+          <Talks />
+          <Twitter />
+          <Podcast />
+          <Profile />
+        </Container>
         <Footer />
         <Top />
-      </StyleProvider>
+        </StyleProvider>
     </div>
   );
 };

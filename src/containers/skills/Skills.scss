@@ -1,11 +1,15 @@
 @import "../../_globalColor";
 
+.skills-main {
+  margin-top: -4rem;
+}
+
 .skills-main-div {
   display: flex;
 }
 
 .skills-text-div {
-  margin-left: 50px;
+  margin: 50px 0;
 }
 
 .skills-main-div > * {
@@ -14,13 +18,15 @@
 }
 
 .skills-image-div > img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
+  padding-bottom: 20px;
+
 }
 .subTitle {
   color: $subTitle;
@@ -33,6 +39,9 @@
   }
 }
 @media (max-width: 768px) {
+  .skills-main {
+    margin-top: 8rem !important;
+  }
   .skills-heading {
     font-size: 30px;
     text-align: center;

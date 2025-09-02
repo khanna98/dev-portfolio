@@ -10,11 +10,11 @@ const illustration = {
 
 const greeting = {
   username: "Mayank Khanna",
-  title: "Hi all, I'm Mayank",
+  title: "Mayank Khanna",
   subTitle:
-    "A passionate software developer, problem solver, and technology enthusiast who loves learning new things. A quick learner with zeal and motivation to succeed, I have experience working as a Full Stack Developer, Voice App Developer, and DevOps Engineer (SRE). I look forward to opportunities that will help me grow and where I can contribute to the growth of the organization with my technical and management skills.",
-  resumeLink:
-    "https://drive.google.com/file/d/1SY4jkAAlKny1kTRT-5BiH1sbFcoI36zO/view?usp=sharing", // Set to empty to hide the button
+    "Senior DevOps & Cloud Engineer with 5+ years of experience in building scalable infrastructure and full-stack applications. I specialize in automating complex workflows and optimizing systems for performance and cost-efficiency.",
+  resumeLink: "",
+    // "https://drive.google.com/file/d/1SY4jkAAlKny1kTRT-5BiH1sbFcoI36zO/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -23,12 +23,11 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/khanna98",
   linkedin: "https://www.linkedin.com/in/khanna98/",
-  gmail: "mkhanna98.dev@gmail.com",
+  gmail: "mail@mayankkhanna.dev",
   gitlab: "https://gitlab.com/mayank.khanna.98",
-  // facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@iammayank",
-  instagram: "https://instagram.com/_mayankkhanna",
-  stackoverflow: "https://stackoverflow.com/users/10852834/mayank-khanna",
+  // medium: "https://medium.com/@iammayank",
+  instagram: "https://instagram.com/moon.light.adventures",
+  // stackoverflow: "https://stackoverflow.com/users/10852834/mayank-khanna",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -37,18 +36,16 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
+  title: "My Expertise",
   subTitle:
-    "I build Cloud Infrastructure and Softwares that makes your life easy and work enjoyable.",
+    "Adept at building scalable cloud infrastructure and intuitive software solutions that enhance user experience and drive operational efficiency.",
   skills: [
-    "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications",
-    "⚡ Build and Deploy a complete working production app from scratch.",
-    "⚡ Help you save cost on cloud infrastructure.",
-    "⚡ Develop good looking and informative dashboards for monitoring and logging.",
-    "⚡ Setup Cloud Infrastructure on AWS, GCP or any cloud provider.",
-    "⚡ Manage Cloud Infrastructure using Terraform (IAC).",
-    "⚡ Automate your deployments using CI/CD, Jenkins etc.",
-    "⚡ Amaze you with my coding and devOps skills.",
+    "⚡ Architecting and developing highly interactive, responsive user interfaces for web and mobile applications.",
+    "⚡ Leading the end-to-end development and deployment of production-ready applications from concept to launch.",
+    "⚡ Implementing cost-optimization strategies to significantly reduce cloud infrastructure expenditures on AWS, GCP, and Azure.",
+    "⚡ Designing and developing insightful dashboards for comprehensive system monitoring, logging, and observability.",
+    "⚡ Provisioning and managing robust cloud infrastructure using Terraform for predictable, version-controlled deployments (IaC).",
+    "⚡ Engineering and automating CI/CD pipelines to streamline development workflows and accelerate deployment cycles.",
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -154,7 +151,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design (React/Angular/React-Native)", //Insert stack or technology you have experience in
@@ -181,7 +178,7 @@ const techStack = {
       progressPercentage: "80%"
     },
   ],
-  displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
+  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
@@ -237,8 +234,8 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on

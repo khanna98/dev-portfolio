@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import "./Blog.scss";
 import BlogCard from "../../components/blogCard/BlogCard";
 import {blogSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { motion } from "framer-motion"
 import StyleContext from "../../contexts/StyleContext";
 export default function Blogs() {
   const {isDark} = useContext(StyleContext);
@@ -10,8 +10,17 @@ export default function Blogs() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="main" id="blogs">
+      <motion.div 
+        className="main" id="blogs"
+        // 2. Define the initial state (before animation)
+        initial={{ opacity: 0, y: 20 }}
+        // 3. Define the animation state (when in view)
+        whileInView={{ opacity: 1, y: 0 }}
+        // 4. Add a transition
+        transition={{ duration: 0.5 }}
+        // 5. Ensure it only runs once
+        viewport={{ once: true }}
+      >
         <div className="blog-header">
           <h1 className="blog-header-text">{blogSection.title}</h1>
           <p
@@ -40,7 +49,6 @@ export default function Blogs() {
             })}
           </div>
         </div>
-      </div>
-    </Fade>
+      </motion.div>
   );
 }

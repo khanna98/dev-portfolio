@@ -40,10 +40,21 @@
   color: $textColor !important;
 }
 
+.greeting-text-div {
+  padding: 0px 30px !important;
+}
+
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
 }
+
+.greeting-text-p {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+
 
 .greeting-image-div > img {
   max-width: 100%;
@@ -108,12 +119,20 @@
     display: block;
   }
   .greeting-image-div {
-    height: 256px;
+    height: 50vh;
+  }
+
+  .greeting-text-div {
+    padding: 0px !important;
   }
 }
 
 @media (max-width: 320px) {
   .main {
     width: auto;
+  }
+
+  .greeting-text-div {
+    padding: 0px !important;
   }
 }

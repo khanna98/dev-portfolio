@@ -1,10 +1,10 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
-import {Fade} from "react-reveal";
-import codingPerson from "../../assets/lottie/what-i-do.json";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import { skillsSection } from "../../portfolio";
+import { motion } from "framer-motion"
+// import codingPerson from "../../assets/lottie/what-i-do.json";
+// import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {
@@ -13,23 +13,22 @@ export default function Skills() {
     return null;
   }
   return (
-    <div className={isDark ? "dark-mode main" : "main"} id="skills">
+    <motion.div 
+      className={isDark ? "dark-mode skills-main main" : "skills-main main"} id="skills"
+      // 2. Define the initial state (before animation)
+      initial={{ opacity: 0, y: 20 }}
+      // 3. Define the animation state (when in view)
+      whileInView={{ opacity: 1, y: 0 }}
+      // 4. Add a transition
+      transition={{ duration: 0.5 }}
+      // 5. Ensure it only runs once
+      viewport={{ once: true }}
+    >
       <div className="skills-main-div">
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
-            )}
-          </div>
-        </Fade>
-        <Fade right duration={1000}>
+        
           <div className="skills-text-div">
             <h1
+              style={{marginBottom: 30}}
               className={isDark ? "dark-mode skills-heading" : "skills-heading"}
             >
               {skillsSection.title}{" "}
@@ -43,7 +42,7 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
+              <SoftwareSkill />
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
@@ -61,8 +60,7 @@ export default function Skills() {
               })}
             </div>
           </div>
-        </Fade>
       </div>
-    </div>
+    </motion.div>
   );
 }

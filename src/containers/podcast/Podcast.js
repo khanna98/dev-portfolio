@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import "./Podcast.scss";
 import {podcastSection} from "../../portfolio";
-import {Fade} from "react-reveal";
+import { motion } from "framer-motion"
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Podcast() {
@@ -10,8 +10,17 @@ export default function Podcast() {
     return null;
   }
   return (
-    <Fade bottom duration={1000} distance="20px">
-      <div className="main">
+      <motion.div 
+        className="main"
+        // 2. Define the initial state (before animation)
+        initial={{ opacity: 0, y: 20 }}
+        // 3. Define the animation state (when in view)
+        whileInView={{ opacity: 1, y: 0 }}
+        // 4. Add a transition
+        transition={{ duration: 0.5 }}
+        // 5. Ensure it only runs once
+        viewport={{ once: true }}
+      >
         <div className="podcast-header">
           <h1 className="podcast-header-title">{podcastSection.title}</h1>
           <p
@@ -39,7 +48,6 @@ export default function Podcast() {
             );
           })}
         </div>
-      </div>
-    </Fade>
+      </motion.div>
   );
 }
