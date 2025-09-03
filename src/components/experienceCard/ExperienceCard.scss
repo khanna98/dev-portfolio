@@ -6,6 +6,7 @@
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
+  margin-bottom: 20px;
 }
 
 .experience-card-dark {
@@ -125,6 +126,12 @@
 /* Media Query */
 
 @media (max-width: 1380px) {
+  .experience-card {
+    margin-bottom: 20px;
+  }
+  .experience-card-dark {
+    margin-bottom: 20px;
+  }
   .experience-text-role {
     padding-top: 0.5rem;
     font-size: 22px;
@@ -142,6 +149,12 @@
 }
 
 @media (max-width: 768px) {
+  .experience-card {
+    margin-bottom: 20px;
+  }
+  .experience-card-dark {
+    margin-bottom: 20px;
+  }
   .experience-text-role {
     font-size: 22px;
   }

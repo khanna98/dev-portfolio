@@ -187,26 +187,29 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Associate SWE | SRE (DevOps and Infrastructure)",
-      company: "UST BlueConch Technologies Pvt. Ltd.",
-      companylogo: require("./assets/images/bct.jpeg"),
-      date: "August 2020 – Present",
-      desc: "I am currently working as an SRE for Uplight, where I automate tasks, take care of the Cloud Infrastructure and make deployments smooth and easy.",
+      role: "Site Reliability Engineer II",
+      company: "Uplight",
+      companylogo: require("./assets/images/uplight-logo.png"),
+      date: "February 2024 – Present",
+      desc: "",
       descBullets: [
-        "Working as the lead in the GCP Migration for Orchestrate Engineering product, where I see and manage the infrastructure that needs to be set up and how to migrate the data and products.",
-        "Implementing CI/CD for the tasks and deployments using CircleCI",
-        "Improving and maintaining legacy Jenkins Pipelines to be used for deployments and enabling logs etc.",
-        "Adding IAC features to make sure that all the infra related changes are made using terraform.",
-        "Creating new and robust dashboards for monitoring and logging in Splunk Observability Cloud.",
-        "Working as Incident Manager for On-Call rotation.",
-        "Adding new features for the new GCP Infrastructure being set up using IAC - Terraform.",
-        "Active member in the C&I Migration using AWS DMS.",
-        "Creating new tenants on the Production environment for the customers.",
-        "Giving regular demos of the new technologies being used and new work that is being done.",
-        "I worked on the AWS Infrastructure enhancement and monitoring cost for the resources.",
-        "Helped in solving a critical production issue that saved UPLIGHT $200K per month cost increase.",
-        "I wrote a script to add tags to all the instances be it EC2, S3, Lambda, or DynamoDB , which helped us monitor costs better and eventually helped save around $ 10k per year.",
-        "I also made various monitoring dashboards in Looker and CloudWatch.",
+        "Orchestrated the end-to-end automation of Autogrid deployments, significantly reducing manual intervention and deployment time.",
+        "Streamlined DNS management by implementing a system for creating and updating records entirely through code, improving consistency and reliability.",
+        "Engineered an automated notification system for AWS Health events, integrating with PagerDuty (PD) to ensure immediate alerting and faster incident response.",
+        "Collaborated with system architects on strategic infrastructure planning to enhance scalability and resilience, while also mentoring junior engineers on best practices.",
+        "Validated expertise by achieving the HashiCorp Certified: Terraform Associate certification.",
+      ]
+    },
+    {
+      role: "Senior Software Engineer",
+      company: "UST.",
+      companylogo: require("./assets/images/ust-logo.png"),
+      date: "August 2020 – January 2024",
+      desc: "",
+      descBullets: [
+        "Led the strategic migration of a core product to Google Cloud Platform (GCP), managing all infrastructure as code using Terraform.",
+        "Engineered and maintained CI/CD pipelines using CircleCI and Jenkins to automate deployments and improve software delivery speed.",
+        "Enhanced platform stability and optimized cloud costs by resolving critical production incidents and implementing robust monitoring solutions."
       ]
     },
     {
@@ -214,17 +217,10 @@ const workExperiences = {
       company: "GoVocal.AI",
       companylogo: require("./assets/images/govocal.jpeg"),
       date: "May 2019 – June 2020",
-      desc: "I have been working as a Software Developer with in-demand skills and technologies. I have made many Voice Apps and also worked on Mobile Apps using React-Native.",
+      desc: "",
       descBullets: [
-        "Developed software lifecycle products from vision through successful deployment.",
-        "Successfully delivered Voice App for Tata Sky on Actions on Google (Google Assistant) and Amazon Alexa (Alexa Skill) into Production.",
-        "Successfully upgraded an android app, Quiddity using React Native. It is a book summaries app where you can read and listen to the summaries of the Great and Best Selling books for free.",
-        "Reviewed, monitored, and repaired any changed code for quality, adherence to standards, and potential performance effects on compatible systems.",
-        "Managed software documentation by testing and validating the accuracy of all new applications to ensure user‐friendliness and productivity.",
-        "Worked with Amazon AWS Lambda and Cloud‐watch for the deployment and testing of the Voice Apps in Production.",
-        "Wrote the request logger for Systematically logging the request and debugging the errors using Winston.",
-        "Designed new software applications by using object‐oriented languages like JavaScript.",
-        "Altered, updated, and enhanced existing systems and applications after performing troubleshooting measures to determine the issue."
+        "Engineered and launched cross-platform mobile applications using React Native, ensuring a seamless user experience across both iOS and Android.",
+        "Developed and deployed innovative voice applications for Amazon Alexa and Google Assistant, creating intuitive, hands-free user experiences."
       ]
     }
   ]
@@ -256,6 +252,23 @@ const achievementSection = {
     "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
+    {
+      title: "Terraform Certified Associate",
+      subtitle:
+        "Got certified as Terraform Associate (003).",
+      image: require("./assets/images/Terraform.png"),
+      footerLink: [
+        { 
+          name: "HashiCorp Certified: Terraform Associate (003)",
+          url: "https://www.credly.com/badges/c8c7a237-255a-49bf-83ba-632ef71dee10"
+        },
+        { name: "#Terraform" },
+        { name: "#Certified" },
+       {
+          name: "#Infrastructure As Code"
+       }
+      ]
+    },
     {
       title: "Spark Award - UST BlueConch Technologies",
       subtitle:
