@@ -14,7 +14,7 @@ const greeting = {
   subTitle:
     "Senior DevOps & Cloud Engineer with 5+ years of experience in building scalable infrastructure and full-stack applications. I specialize in automating complex workflows and optimizing systems for performance and cost-efficiency.",
   resumeLink: "",
-    // "https://drive.google.com/file/d/1SY4jkAAlKny1kTRT-5BiH1sbFcoI36zO/view?usp=sharing", // Set to empty to hide the button
+  // "https://drive.google.com/file/d/1SY4jkAAlKny1kTRT-5BiH1sbFcoI36zO/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -45,7 +45,7 @@ const skillsSection = {
     "⚡ Implementing cost-optimization strategies to significantly reduce cloud infrastructure expenditures on AWS, GCP, and Azure.",
     "⚡ Designing and developing insightful dashboards for comprehensive system monitoring, logging, and observability.",
     "⚡ Provisioning and managing robust cloud infrastructure using Terraform for predictable, version-controlled deployments (IaC).",
-    "⚡ Engineering and automating CI/CD pipelines to streamline development workflows and accelerate deployment cycles.",
+    "⚡ Engineering and automating CI/CD pipelines to streamline development workflows and accelerate deployment cycles."
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -176,7 +176,7 @@ const techStack = {
     {
       Stack: "Docker, Kubernetes",
       progressPercentage: "80%"
-    },
+    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
@@ -197,7 +197,7 @@ const workExperiences = {
         "Streamlined DNS management by implementing a system for creating and updating records entirely through code, improving consistency and reliability.",
         "Engineered an automated notification system for AWS Health events, integrating with PagerDuty (PD) to ensure immediate alerting and faster incident response.",
         "Collaborated with system architects on strategic infrastructure planning to enhance scalability and resilience, while also mentoring junior engineers on best practices.",
-        "Validated expertise by achieving the HashiCorp Certified: Terraform Associate certification.",
+        "Validated expertise by achieving the HashiCorp Certified: Terraform Associate certification."
       ]
     },
     {
@@ -254,19 +254,18 @@ const achievementSection = {
   achievementsCards: [
     {
       title: "Terraform Certified Associate",
-      subtitle:
-        "Got certified as Terraform Associate (003).",
+      subtitle: "Got certified as Terraform Associate (003).",
       image: require("./assets/images/Terraform.png"),
       footerLink: [
-        { 
+        {
           name: "HashiCorp Certified: Terraform Associate (003)",
           url: "https://www.credly.com/badges/c8c7a237-255a-49bf-83ba-632ef71dee10"
         },
-        { name: "#Terraform" },
-        { name: "#Certified" },
-       {
+        {name: "#Terraform"},
+        {name: "#Certified"},
+        {
           name: "#Infrastructure As Code"
-       }
+        }
       ]
     },
     {
@@ -275,9 +274,9 @@ const achievementSection = {
         "Got appreciation for being the spark in the team and motivating them to do better and efficient work.",
       image: require("./assets/images/14595-thumbs-up.gif"),
       footerLink: [
-        { name: "Spark Award" },
-        { name: "#Leadership" },
-        { name: "#Appreciation" },
+        {name: "Spark Award"},
+        {name: "#Leadership"},
+        {name: "#Appreciation"},
         {
           name: "Certificate",
           url: "https://drive.google.com/file/d/13Efi2NP1QH-PB-tqhV0u-cMc0wQnz1MP/view?usp=sharing"
@@ -290,8 +289,8 @@ const achievementSection = {
         "Got appreciation for the work I did as a Associate Software Enginner.",
       image: require("./assets/images/61147-excellent.gif"),
       footerLink: [
-        { name: "Pat On the Back" },
-        { name: "#Appreciation" },
+        {name: "Pat On the Back"},
+        {name: "#Appreciation"},
         {
           name: "Certificate 2021",
           url: "https://drive.google.com/file/d/13Efi2NP1QH-PB-tqhV0u-cMc0wQnz1MP/view?usp=sharing"
@@ -307,8 +306,8 @@ const achievementSection = {
       subtitle: "Completed Certifcation from Udemy for Python basics",
       image: require("./assets/images/python-logo.png"),
       footerLink: [
-        { name: "Jul 2020 - No Expiration" },
-        { name: "Udemy", url: "https://www.udemy.com" },
+        {name: "Jul 2020 - No Expiration"},
+        {name: "Udemy", url: "https://www.udemy.com"},
         {
           name: "Certification Credntials",
           url: "https://www.udemy.com/certificate/UC-9a058d13-f3a1-4455-aa9c-dd0255ad527c/"
@@ -320,8 +319,8 @@ const achievementSection = {
       subtitle: "Completed Certifcation from Udemy for React",
       image: require("./assets/images/react-logo.png"),
       footerLink: [
-        { name: "Jun 2020 - No Expiration" },
-        { name: "Udemy", url: "https://www.udemy.com" },
+        {name: "Jun 2020 - No Expiration"},
+        {name: "Udemy", url: "https://www.udemy.com"},
         {
           name: "Certification Credntials",
           url: "https://www.udemy.com/certificate/UC-ec858918-b82d-432f-962c-b7476d87244f/"
@@ -333,8 +332,8 @@ const achievementSection = {
       subtitle: "Completed Certifcation from Udemy for Nodejs",
       image: require("./assets/images/node-logo.png"),
       footerLink: [
-        { name: "May 2020 - No Expiration" },
-        { name: "Udemy", url: "https://www.udemy.com" },
+        {name: "May 2020 - No Expiration"},
+        {name: "Udemy", url: "https://www.udemy.com"},
         {
           name: "Certification Credntials",
           url: "https://www.udemy.com/certificate/UC-add3b90c-f4da-416c-9b92-35c5f14aad66/"
@@ -346,8 +345,8 @@ const achievementSection = {
       subtitle: "Completed Certifcation from Udemy for MongoDB",
       image: require("./assets/images/MongoDB-Logo.png"),
       footerLink: [
-        { name: "Apr 2020 - No Expiration" },
-        { name: "Udemy", url: "https://www.udemy.com" },
+        {name: "Apr 2020 - No Expiration"},
+        {name: "Udemy", url: "https://www.udemy.com"},
         {
           name: "Certification Credntials",
           url: "https://www.udemy.com/certificate/UC-f17f0ea5-dcfe-4dfe-8b69-89a30a3d6f93/"
@@ -359,8 +358,8 @@ const achievementSection = {
       subtitle: "Completed Certifcation from Coding Ninjavs for DS in JAVA ",
       image: require("./assets/images/coding-ninja-logo.png"),
       footerLink: [
-        { name: "Jun 2019 - No Expiration" },
-        { name: "Coding Ninjas", url: "https://www.codingninjas.in" },
+        {name: "Jun 2019 - No Expiration"},
+        {name: "Coding Ninjas", url: "https://www.codingninjas.in"},
         {
           name: "Certification Credntials",
           url: "https://www.codingninjas.in/verify/c1e90177b1930cf6"
@@ -372,8 +371,8 @@ const achievementSection = {
       subtitle: "Completed nanodegrees from Udacity",
       image: require("./assets/images/udacity-logo.png"),
       footerLink: [
-        { name: "Mar 2018 - No Expiration" },
-        { name: "Udacity", url: "https://www.udacity.com" },
+        {name: "Mar 2018 - No Expiration"},
+        {name: "Udacity", url: "https://www.udacity.com"},
         {
           name: "Certification Credntials I",
           url: "https://drive.google.com/file/d/1S7NrzYGwVdzE09T9gkIxfOBJOMWBCdBe/view?usp=sharing"
@@ -390,8 +389,8 @@ const achievementSection = {
         "Completed training from Acadview (Now upGrad) for basics of JAVA ",
       image: require("./assets/images/upgrad-logo.png"),
       footerLink: [
-        { name: "Jun 2019 - No Expiration" },
-        { name: "upGrad", url: "https://www.upgrad.com" },
+        {name: "Jun 2019 - No Expiration"},
+        {name: "upGrad", url: "https://www.upgrad.com"},
         {
           name: "Certificate Credentials",
           url: "https://drive.google.com/file/d/1_EfucnNr6j1JUnEQp5Y7ZyEzqgfavIAv/view?usp=sharing"
@@ -434,8 +433,7 @@ const blogSection = {
 
 const talkSection = {
   title: "TALKS",
-  subtitle:
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅",
+  subtitle: "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅",
   talks: [
     {
       title: "Build Actions For Google Assistant",

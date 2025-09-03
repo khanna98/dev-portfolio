@@ -17,7 +17,7 @@ import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
-import { Container } from '@mui/system';
+import {Container} from "@mui/system";
 import "./Main.scss";
 
 const Main = () => {
@@ -49,7 +49,7 @@ const Main = () => {
         </Container>
         <Footer />
         <Top />
-        </StyleProvider>
+      </StyleProvider>
     </div>
   );
 };

@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
-import { motion } from "motion/react"
+import React, {useContext} from "react";
+import {motion} from "motion/react";
 import "./EducationCard.scss";
 import StyleContext from "../../contexts/StyleContext";
 
 // Defined outside to prevent re-creation on every render
-const GetDescBullets = ({ descBullets }) => {
+const GetDescBullets = ({descBullets}) => {
   return descBullets
     ? descBullets.map((item, i) => (
         <li key={i} className="subTitle">
@@ -14,21 +14,21 @@ const GetDescBullets = ({ descBullets }) => {
     : null;
 };
 
-export default function EducationCard({ school }) {
-  const { isDark } = useContext(StyleContext);
+export default function EducationCard({school}) {
+  const {isDark} = useContext(StyleContext);
 
   return (
     <div>
       <motion.div
         className="education-card"
         // 2. Define the initial state (before animation)
-        initial={{ opacity: 0, y: 20 }}
+        initial={{opacity: 0, y: 20}}
         // 3. Define the animation state (when in view)
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={{opacity: 1, y: 0}}
         // 4. Add a transition
-        transition={{ duration: 0.5 }}
+        transition={{duration: 0.5}}
         // 5. Ensure it only runs once
-        viewport={{ once: true }}
+        viewport={{once: true}}
       >
         <div className="education-card-left">
           <img
@@ -52,9 +52,7 @@ export default function EducationCard({ school }) {
               {school.subHeader}
             </h5>
             <p
-              className={`${
-                isDark ? "dark-mode" : ""
-              } education-text-duration`}
+              className={`${isDark ? "dark-mode" : ""} education-text-duration`}
             >
               {school.duration}
             </p>
@@ -65,9 +63,9 @@ export default function EducationCard({ school }) {
               </ul>
             </div>
           </div>
-        </div> 
+        </div>
       </motion.div>
-      <motion.div className="education-card-border" ></motion.div>
-      </div>
+      <motion.div className="education-card-border"></motion.div>
+    </div>
   );
 }
