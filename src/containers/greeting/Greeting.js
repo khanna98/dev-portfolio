@@ -65,7 +65,7 @@ export default function Greeting() {
           <img
             alt="man sitting on table"
             style={{borderRadius: 50}}
-            src={require("../../assets/images/pro-pic.jpg")}
+            src={require("../../assets/images/mayank.jpg")}
           ></img>
           {/* )} */}
         </div>
