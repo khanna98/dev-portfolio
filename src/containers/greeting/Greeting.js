@@ -1,8 +1,9 @@
 import React, {useContext} from "react";
 import {motion} from "framer-motion";
 import "./Greeting.scss";
-// import landinghello from "../../assets/lottie/landinghello.json";
-// import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import profileImage from "../../assets/images/webp/mayank.webp";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 
@@ -59,15 +60,16 @@ export default function Greeting() {
           </div>
         </div>
         <div className="greeting-image-div">
-          {/* {illustration.animated ? (
-              <DisplayLottie animationData={landinghello} />
-            ) : ( */}
-          <img
-            alt="man sitting on table"
-            style={{borderRadius: 50}}
-            src={require("../../assets/images/IMG_0110.png")}
-          ></img>
-          {/* )} */}
+          <LazyLoadImage
+            alt="Profile Picture"
+            src={profileImage} 
+            effect="blur"
+            style={{
+              width: "100%",
+              height: "auto",
+              borderRadius: "20%"
+            }}
+          />
         </div>
       </div>
     </motion.div>

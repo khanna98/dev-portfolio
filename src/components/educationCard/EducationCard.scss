@@ -53,6 +53,10 @@
   max-width: 70%;
 }
 
+.education-card-left {
+  margin-bottom: 20px;
+}
+
 .education-text-subHeader {
   color: $textColor;
   font-weight: 700;
@@ -103,8 +107,8 @@
     font-size: 16px;
   }
   .education-roundedimg {
-    width: 4rem;
-    height: 4rem;
+    width: 20vh;
+    height: 20vh;
     margin-bottom: 0.5rem;
     margin-right: 0px;
   }
@@ -116,14 +120,15 @@
   }
   .education-card-right {
     max-width: 100%;
+    margin: 0 auto
   }
   .education-card-border {
     width: 100%;
   }
   .education-roundedimg {
     margin-top: 10px;
-    width: 4rem;
-    height: 4rem;
+    width: 20vh;
+    height: 20vh;
     margin-bottom: 1rem;
     margin-right: 0;
   }

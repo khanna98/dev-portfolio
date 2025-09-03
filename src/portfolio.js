@@ -131,15 +131,15 @@ const educationInfo = {
   schools: [
     {
       schoolName: "IIT Guwahati",
-      logo: require("./assets/images/iit-logo.png"),
+      logo: require("./assets/images/webp/iit-logo.webp"),
       subHeader: "Advanced PG Certification in Cloud & Devops",
-      duration: "September 2021 - Present",
+      duration: "September 2021 - October 2022",
       desc: "",
       descBullets: []
     },
     {
       schoolName: "Chitkara University",
-      logo: require("./assets/images/cu-logo.jpeg"),
+      logo: require("./assets/images/webp/cu-logo.webp"),
       subHeader: "Bachelor of Engineering in Computer Science & Technology",
       duration: "June 2016 - June 2020",
       desc: "",
@@ -189,7 +189,7 @@ const workExperiences = {
     {
       role: "Site Reliability Engineer II",
       company: "Uplight",
-      companylogo: require("./assets/images/uplight-logo.png"),
+      companylogo: require("./assets/images/webp/uplight-logo.webp"),
       date: "February 2024 – Present",
       desc: "",
       descBullets: [
@@ -203,7 +203,7 @@ const workExperiences = {
     {
       role: "Senior Software Engineer",
       company: "UST.",
-      companylogo: require("./assets/images/ust-logo.png"),
+      companylogo: require("./assets/images/webp/ust-logo.webp"),
       date: "August 2020 – January 2024",
       desc: "",
       descBullets: [
@@ -215,7 +215,7 @@ const workExperiences = {
     {
       role: "SDE Intern | Full Stack Developer",
       company: "GoVocal.AI",
-      companylogo: require("./assets/images/govocal.jpeg"),
+      companylogo: require("./assets/images/webp/govocal.webp"),
       date: "May 2019 – June 2020",
       desc: "",
       descBullets: [
@@ -255,7 +255,7 @@ const achievementSection = {
     {
       title: "Terraform Certified Associate",
       subtitle: "Got certified as Terraform Associate (003).",
-      image: require("./assets/images/Terraform.png"),
+      image: require("./assets/images/webp/Terraform.webp"),
       footerLink: [
         {
           name: "HashiCorp Certified: Terraform Associate (003)",
@@ -272,7 +272,7 @@ const achievementSection = {
       title: "Spark Award - UST BlueConch Technologies",
       subtitle:
         "Got appreciation for being the spark in the team and motivating them to do better and efficient work.",
-      image: require("./assets/images/14595-thumbs-up.gif"),
+      image: require("./assets/videos/14595-thumbs-up.webm"),
       footerLink: [
         {name: "Spark Award"},
         {name: "#Leadership"},
@@ -287,7 +287,7 @@ const achievementSection = {
       title: "Pat on Back - Uplight",
       subtitle:
         "Got appreciation for the work I did as a Associate Software Enginner.",
-      image: require("./assets/images/61147-excellent.gif"),
+      image: require("./assets/videos/61147-excellent.webm"),
       footerLink: [
         {name: "Pat On the Back"},
         {name: "#Appreciation"},
@@ -304,7 +304,7 @@ const achievementSection = {
     {
       title: "Python: Zero to Hero",
       subtitle: "Completed Certifcation from Udemy for Python basics",
-      image: require("./assets/images/python-logo.png"),
+      image: require("./assets/images/webp/python-logo.webp"),
       footerLink: [
         {name: "Jul 2020 - No Expiration"},
         {name: "Udemy", url: "https://www.udemy.com"},
@@ -317,7 +317,7 @@ const achievementSection = {
     {
       title: "React: Complete Developer Guide",
       subtitle: "Completed Certifcation from Udemy for React",
-      image: require("./assets/images/react-logo.png"),
+      image: require("./assets/images/webp/react-logo.webp"),
       footerLink: [
         {name: "Jun 2020 - No Expiration"},
         {name: "Udemy", url: "https://www.udemy.com"},
@@ -330,7 +330,7 @@ const achievementSection = {
     {
       title: "Nodejs: Complete Developer Course",
       subtitle: "Completed Certifcation from Udemy for Nodejs",
-      image: require("./assets/images/node-logo.png"),
+      image: require("./assets/images/webp/node-logo.webp"),
       footerLink: [
         {name: "May 2020 - No Expiration"},
         {name: "Udemy", url: "https://www.udemy.com"},
@@ -343,7 +343,7 @@ const achievementSection = {
     {
       title: "MongoDB: Complete Developer Guide",
       subtitle: "Completed Certifcation from Udemy for MongoDB",
-      image: require("./assets/images/MongoDB-Logo.png"),
+      image: require("./assets/images/webp/MongoDB-Logo.webp"),
       footerLink: [
         {name: "Apr 2020 - No Expiration"},
         {name: "Udemy", url: "https://www.udemy.com"},
@@ -356,7 +356,7 @@ const achievementSection = {
     {
       title: "Data Structures in JAVA",
       subtitle: "Completed Certifcation from Coding Ninjavs for DS in JAVA ",
-      image: require("./assets/images/coding-ninja-logo.png"),
+      image: require("./assets/images/webp/coding-ninja-logo.webp"),
       footerLink: [
         {name: "Jun 2019 - No Expiration"},
         {name: "Coding Ninjas", url: "https://www.codingninjas.in"},
@@ -369,7 +369,7 @@ const achievementSection = {
     {
       title: "Front-end Nanodegree I & II",
       subtitle: "Completed nanodegrees from Udacity",
-      image: require("./assets/images/udacity-logo.png"),
+      image: require("./assets/images/webp/udacity-logo.webp"),
       footerLink: [
         {name: "Mar 2018 - No Expiration"},
         {name: "Udacity", url: "https://www.udacity.com"},
@@ -387,7 +387,7 @@ const achievementSection = {
       title: "Acadview: Core JAVA Development",
       subtitle:
         "Completed training from Acadview (Now upGrad) for basics of JAVA ",
-      image: require("./assets/images/upgrad-logo.png"),
+      image: require("./assets/images/webp/upgrad-logo.webp"),
       footerLink: [
         {name: "Jun 2019 - No Expiration"},
         {name: "upGrad", url: "https://www.upgrad.com"},

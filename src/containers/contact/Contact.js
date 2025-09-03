@@ -68,7 +68,7 @@ export default function Contact() {
           ) : (
             <img
               alt="Man working"
-              src={require("../../assets/images/contactMailDark.svg")}
+              src={require("../../assets/images/svg/contactMailDark.svg")}
             ></img>
           )}
         </div>
